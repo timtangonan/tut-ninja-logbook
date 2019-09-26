@@ -18,14 +18,14 @@ class AddNinja extends Component {
     
     render() {
         return (
-            <div>
+            <div className="form-container">
                 <form onSubmit={this.handleSubmit}>
                     <label htmlFor="name">Name: </label>
-                    <input type="text" id="name" onChange={this.handleChange}/>
+                    <input type="text" id="name" onChange={this.handleChange}/><br/>
                     <label htmlFor="age">Age: </label>
-                    <input type="text" id="age" onChange={this.handleChange}/>
+                    <input type="text" id="age" onChange={this.handleChange}/><br/>
                     <label htmlFor="belt">Belt: </label>
-                    <input type="text" id="belt" onChange={this.handleChange}/>
+                    <input type="text" id="belt" onChange={this.handleChange}/><br/>
                     <button>Submit</button>
                 </form>
             </div>

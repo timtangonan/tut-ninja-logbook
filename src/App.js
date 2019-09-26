@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import Ninjas from './Ninjas'
-import AddNinja from './AddNinja'
+import Ninjas from './Ninjas';
+import AddNinja from './AddNinja';
+import './App.css';
 
 class App extends Component {
   state = {
@@ -28,8 +29,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>My first Reat app!</h1>
-        <p>Welcome :)</p>
+        <h1>Ninja Logbook</h1>
+        <p>A React Code-along Tutorial from The Net Ninja</p>
         <Ninjas deleteNinja={this.deleteNinja} ninjas={this.state.ninjas} />
         <AddNinja addNinja={this.addNinja} />
       </div>
